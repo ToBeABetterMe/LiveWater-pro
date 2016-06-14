@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id = "@+id/comment_part1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id = "@+id/order"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="1"
+                android:textColor="@color/red"
+                android:textStyle="italic"
+                android:textSize="@dimen/text_size_22"/>
+            <Button
+                android:id="@+id/btn_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_number"
+                android:background="@null"
+                android:drawableLeft="@drawable/circle_collect_unnormal"
+                android:text="收藏"
+                android:textColor="@color/text_color_gray_light"
+                android:textSize="@dimen/text_size_15" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/order"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="高等数学 I"
+            android:textColor="#101010"
+            android:layout_toRightOf="@+id/order"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/commenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/order"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_toRightOf="@+id/order"
+            android:text="薛长虹"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_16" />
+        <TextView
+            android:id="@+id/comment_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="4.9分"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_18"
+            />
+    </RelativeLayout>
+</RelativeLayout>

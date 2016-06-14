@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id = "@+id/comment_part1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/logo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="综合榜"
+            android:textColor="#101010"
+            android:layout_toRightOf="@+id/logo"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/commenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_toRightOf="@+id/logo"
+            android:text="最受欢迎的课程都在这里哦"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_16" />
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="两天前"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_13"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

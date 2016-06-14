@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id = "@+id/comment_part1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image" />
+
+        <TextView
+            android:id="@+id/comment_const1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/logo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="运筹学A"
+            android:textColor="#101010"
+            android:layout_toRightOf="@+id/logo"
+            android:textSize="@dimen/text_size_16" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/logo"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="5/5/1分"
+            android:textColor="#101010"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/commenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_toRightOf="@+id/logo"
+            android:text="小王子V，信息11级"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="两天前"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_13" />
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:layout_below="@+id/comment_part1">
+        <TextView
+            android:id="@+id/comment_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:text="课上得不错，但为人比较装逼，较为刻板，不考虑学生感受"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_14" />
+        <TextView
+            android:id="@+id/comment_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:text="标签：治学严谨，僵化刻板，冷酷无情"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_14" />
+        <Button
+            android:id="@+id/btn_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/button_comment"
+            android:layout_below="@id/comment_tags"
+            android:background="@null"
+            android:drawableLeft="@drawable/circle_collect_unnormal"
+            android:text="3"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_15" />
+
+        <Button
+            android:id="@+id/button_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/btn_attention"
+            android:background="@null"
+            android:drawableLeft="@drawable/circle_share_unnormal"
+            android:text="5"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_15" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

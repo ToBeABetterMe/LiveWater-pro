@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id = "@+id/comment_part1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_image" />
+
+    <TextView
+        android:id="@+id/comment_const1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/logo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="评"
+        android:textColor="#101010"
+        android:layout_toRightOf="@+id/logo"
+        android:textSize="@dimen/text_size_16" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/logo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="钟晓春"
+        android:textColor="#101010"
+        android:layout_toRightOf="@+id/comment_const1"
+        android:textSize="@dimen/text_size_16" />
+    <TextView
+        android:id="@+id/comment_const2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/logo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="的"
+        android:textColor="#101010"
+        android:layout_toRightOf="@+id/name"
+        android:textSize="@dimen/text_size_16" />
+    <TextView
+        android:id="@+id/comment_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/logo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="大学物理"
+        android:textColor="#101010"
+        android:layout_toRightOf="@+id/comment_const2"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/commenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/logo"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_toRightOf="@+id/logo"
+        android:text="小王子V"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_13" />
+
+        <TextView
+            android:id="@+id/comment_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_toRightOf="@+id/commenter"
+            android:text="4.7分"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_13" />
+
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="两天前"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_13" />
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:layout_below="@+id/comment_part1">
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:text="地址：放假了大解放了看到就阿狸分开多久啊放了多久啊离开封疆大吏减肥大事了,放了多久啊离开封疆大吏减肥大事了"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
