@@ -2,8 +2,9 @@
 <resources>
 
 	<string-array name="news_titles">
-		<item>热门评价</item>
-		<item>最新评价</item>
+		<item>动态</item>
+		<item>经验</item>
+		<item>榜单</item>
 	</string-array>
 	<string-array name="schoolYear">
 		<item>2000</item>

@@ -14,7 +14,6 @@
 		<attr name="pstsShouldExpand" format="boolean"/>
 		<attr name="pstsTextAllCaps" format="boolean"/>
 		<attr name="tabTextSize" format="dimension"/>
-		<attr name="tabTextColor" format="color"/>
 		<attr name="selectedTabTextColor" format="color"/>
 	</declare-styleable>
 
