@@ -9,8 +9,9 @@ import com.livewater.comment.R;
 
 
 /**
- * Created by tiansj on 15/7/31.
+ * Created by  on 15/7/31.
  */
+//test
 public class LoginActivity extends Activity {
 
     @Override
