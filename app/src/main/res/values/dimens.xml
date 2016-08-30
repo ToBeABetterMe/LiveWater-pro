@@ -6,6 +6,7 @@
     <dimen name="nav_header_vertical_spacing">16dp</dimen>
     <dimen name="nav_header_height">160dp</dimen>
     <dimen name="fab_margin">10dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
 
     <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
 		 https://developer.android.com/design/patterns/navigation-drawer.html -->
@@ -37,6 +38,7 @@
     <dimen name="text_max">18sp</dimen>
     <dimen name="text_med">15sp</dimen>
     <dimen name="text_min">13sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 
     <dimen name="margin_min">5dp</dimen>
     <dimen name="margin_med">10dp</dimen>

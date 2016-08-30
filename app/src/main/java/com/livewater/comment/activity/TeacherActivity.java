@@ -1,6 +1,7 @@
 package com.livewater.comment.activity;
 
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
@@ -22,6 +23,8 @@ public class TeacherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher);
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -31,6 +34,14 @@ public class TeacherActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        //设置toolbar高度
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT && Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP)
+//        {
+//            toolbar.getLayoutParams().height = getAppBarHeight();
+//            toolbar.setPadding(toolbar.getPaddingLeft(),getStatusBarHeight(),toolbar.getPaddingRight(),toolbar.getPaddingBottom());
+//        }
+
 
         BarChart mBarChart = (BarChart) findViewById(R.id.barchart);
 
@@ -83,5 +94,28 @@ public class TeacherActivity extends AppCompatActivity {
 
         mPieChart.startAnimation();
 
+    }
+    private int getAppBarHeight()
+    {
+        return dip2px(56)+getStatusBarHeight();
+    }
+
+    private int getStatusBarHeight()
+    {
+        int result = 0;
+        int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+
+        if (resourceId > 0)
+        {
+            result = getResources().getDimensionPixelSize(resourceId);
+        }
+
+        return result;
+    }
+
+    private  int dip2px(float dipValue)
+    {
+        final float scale = getResources().getDisplayMetrics().density;
+        return (int) (dipValue * scale + 0.5f);
     }
 }

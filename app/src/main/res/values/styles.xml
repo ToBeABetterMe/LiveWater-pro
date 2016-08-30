@@ -22,7 +22,7 @@
 		<item name="colorAccent">@color/colorAccent</item>
 	</style>
 	<style name="AppTheme" parent="@style/BaseAppTheme">
-		<item name="android:windowIsTranslucent">true</item>
+
 	</style>
 
 	<style name="AppTheme.NoActionBar">

@@ -138,7 +138,8 @@ public class MainActivity extends  BaseFragmentActivity
              Intent intent=new Intent(MainActivity.this,  TeacherActivity.class);
              startActivity(intent);
         } else if (id == R.id.nav_gallery) {
-
+            Intent intent=new Intent(MainActivity.this,  ScrollingActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
