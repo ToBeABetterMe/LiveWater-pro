@@ -5,13 +5,15 @@
 
 	<!-- 主背景色值 -->
 	<color name="background_color">#fff8f8f8</color>
-	<color name="status_bar_bg">#f8f8f8</color>
+	<color name="status_bar_bg">#FF03A9F4</color>
 	<color name="main_header_bg">#ffffff</color>
 	<color name="main_footer_bg">#fefefe</color>
 
-	<color name="colorPrimary">#3F51B5</color>
-	<color name="colorPrimaryDark">#303F9F</color>
+	<color name="colorPrimary">#FF03A9F4</color>
+	<color name="colorPrimaryDark">#FF0288D1</color>
+	<color name="status_bar_color">@color/colorPrimaryDark</color>
 	<color name="colorAccent">#FF4081</color>
+	<color name="color_31c27c">#31c27c</color>
 
 	<color name="grey_title">#626262</color>
 	<color name="description_color">#878787</color>

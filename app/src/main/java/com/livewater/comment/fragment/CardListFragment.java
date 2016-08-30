@@ -64,6 +64,7 @@ public class CardListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.item, container, false);
         ButterKnife.bind(this, view);
+        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
         return view;
     }
 
@@ -71,11 +72,10 @@ public class CardListFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         context = (Activity) getActivity();
-        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         initData();
-
     }
     private void initData() {
         beanList = new ArrayList<>();

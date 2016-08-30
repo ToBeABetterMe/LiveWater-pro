@@ -5,7 +5,6 @@
     android:background="@drawable/nav_header_3"
     android:gravity="center"
     android:orientation="vertical"
-
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <com.livewater.comment.ui.roundedimage.RoundedImageView

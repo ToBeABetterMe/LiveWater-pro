@@ -36,7 +36,6 @@ import butterknife.ButterKnife;
 public class CommentFragment extends Fragment {
 
     private Activity context;
-
     private SearchParam param;
     private int pno = 1;
     private boolean isLoadAll;
@@ -44,8 +43,6 @@ public class CommentFragment extends Fragment {
     @Bind(R.id.listView)
     PullToRefreshListView listView;
     QuickAdapter<SearchShop> adapter;
-
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

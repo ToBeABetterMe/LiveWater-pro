@@ -1,6 +1,7 @@
 package com.livewater.comment.activity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -23,6 +24,8 @@ import android.widget.RadioGroup;
 
 import com.livewater.comment.R;
 import com.livewater.comment.fragment.BufferKnifeFragment;
+import com.livewater.comment.fragment.CardListFragment;
+import com.livewater.comment.fragment.CommentFragment;
 import com.livewater.comment.fragment.DemoPtrFragment;
 import com.livewater.comment.fragment.MainPagerFragment;
 
@@ -48,6 +51,7 @@ public class MainActivity extends  BaseFragmentActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -68,6 +72,29 @@ public class MainActivity extends  BaseFragmentActivity
         }
 
     }
+    private int getAppBarHeight()
+    {
+        return dip2px(56)+getStatusBarHeight();
+    }
+    private int getStatusBarHeight()
+    {
+        int result = 0;
+        int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+
+        if (resourceId > 0)
+        {
+            result = getResources().getDimensionPixelSize(resourceId);
+        }
+
+        return result;
+    }
+
+    private  int dip2px(float dipValue)
+    {
+        final float scale = getResources().getDisplayMetrics().density;
+        return (int) (dipValue * scale + 0.5f);
+    }
+
 
     @Override
     public void onBackPressed() {
@@ -193,7 +220,7 @@ public class MainActivity extends  BaseFragmentActivity
     private Fragment instantFragment(int currIndex) {
         switch (currIndex) {
             case 0: return new BufferKnifeFragment();
-            case 1: return new DemoPtrFragment();
+            case 1: return new CommentFragment();
             case 2: return new MainPagerFragment();
             default: return null;
         }
