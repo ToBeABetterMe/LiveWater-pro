@@ -51,6 +51,7 @@
     <string name="name_exist">该用户名已经被注册</string>
     <string name="register_fail">注册失败</string>
     <string name="register_sucess">注册成功</string>
+    <string name="title_activity_teacher">TeacherActivity</string>
 
 
 </resources>
