@@ -67,7 +67,7 @@ public class RegisterActivity extends Activity {
         mYearButton = (Button) findViewById(R.id.btnYearSelect);
         mDeptButton = (Button) findViewById(R.id.btnDeptSelect);
         mRegisterButton = (Button) findViewById(R.id.btnRegister);
-        mCancleButton = (Button) findViewById(R.id.btnClose);
+//        mCancleButton = (Button) findViewById(R.id.btnClose);
 
 
     }
@@ -84,9 +84,9 @@ public class RegisterActivity extends Activity {
                 case R.id.btnRegister:
                     register();
                     break;
-                case R.id.btnClose:
-                    cancle();
-                    break;
+//                case R.id.btnClose:
+//                    cancle();
+//                    break;
             }
         }
     };

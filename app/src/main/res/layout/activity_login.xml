@@ -6,7 +6,8 @@
 	android:layout_height="fill_parent">
 
 	<RelativeLayout
-		android:background="@drawable/login_bg"
+		android:id="@+id/login_part1"
+		android:background="@drawable/login_bg2"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent">
 
@@ -16,7 +17,7 @@
 		android:layout_height="90.0dip"
 		android:layout_marginLeft="18.0dip"
 		android:layout_marginRight="18.0dip"
-		android:layout_marginTop="200.0dip"
+		android:layout_marginTop="320.0dip"
 		android:background="@drawable/login_rect_white">
 
 		<RelativeLayout
@@ -101,22 +102,75 @@
 		android:layout_below="@+id/rl_1"
 		android:layout_marginLeft="18.0dip"
 		android:layout_marginRight="18.0dip"
-		android:layout_marginTop="30.0dip"
+		android:layout_marginTop="15.0dip"
 		android:background="@drawable/btn_bg_gray"
 		android:clickable="false"
 		android:enabled="false"
 		android:text="登录"
 		android:textColor="#ffffffff"
 		android:textSize="18.0sp" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/btnSure"
+		android:layout_marginTop="20dip"
+		android:text="立即注册"
+		android:textColor="@color/orange"
+		android:textSize="@dimen/text_med"
+		android:layout_centerHorizontal="true"/>
 
-	<Button
-		android:id="@+id/btnClose"
-		android:layout_width="20.0dip"
-		android:layout_height="20.0dip"
-		android:layout_alignParentBottom="true"
-		android:layout_centerHorizontal="true"
-		android:layout_marginBottom="40.0dip"
-		android:background="@drawable/login_close" />
 
 	</RelativeLayout>
+	<LinearLayout
+		android:id="@+id/login_part3"
+		android:layout_alignParentBottom="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="10dp"
+		android:gravity="center">
+		<Button
+			android:id="@+id/login_qq"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:background="@drawable/tencent"
+			/>
+		<Button
+			android:id="@+id/login_sina"
+			android:layout_width="24dp"
+			android:layout_height="20dp"
+			android:layout_marginLeft="50dp"
+			android:background="@drawable/sina"
+			/>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/login_part2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_above="@id/login_part3"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="10dp"
+		android:gravity="center"
+		>
+		<View
+			android:layout_width="90dp"
+			android:layout_height="1px"
+			android:background="#73bab2"
+			/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="其它方式登录"
+			android:textColor="#73bab2"
+			android:layout_marginLeft="20dp"/>
+		<View
+			android:layout_width="90dp"
+			android:layout_height="1px"
+			android:background="#73bab2"
+			android:layout_marginLeft="20dp"
+			/>
+	</LinearLayout>
+
+
 </RelativeLayout>

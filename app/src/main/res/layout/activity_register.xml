@@ -38,7 +38,7 @@
                     android:layout_height="fill_parent"
                     android:layout_toRightOf="@+id/imgPhone1"
                     android:background="@null"
-                    android:hint="昵称"
+                    android:hint="输入昵称"
                     android:inputType="textEmailAddress"
                     android:maxLength="11"
                     android:paddingLeft="15.0dip"
@@ -78,7 +78,7 @@
                     android:layout_height="fill_parent"
                     android:layout_toRightOf="@+id/imgPhone2"
                     android:background="@null"
-                    android:hint="邮箱"
+                    android:hint="输入邮箱"
                     android:inputType="textEmailAddress"
                     android:maxLength="11"
                     android:paddingLeft="15.0dip"
@@ -123,7 +123,7 @@
                     android:layout_height="fill_parent"
                     android:layout_toRightOf="@+id/imgCode1"
                     android:background="@null"
-                    android:hint="密码"
+                    android:hint="输入密码"
                     android:inputType="textPassword"
                     android:maxLength="20"
                     android:paddingLeft="15.0dip"
@@ -228,7 +228,6 @@
                     android:textSize="20.0sp"
                     android:textColor="#ffaaaaaa"
                     />
-
                 <Button
                     android:id="@+id/btnDeptSelect"
                     android:layout_width="fill_parent"
@@ -256,15 +255,6 @@
             android:text="注册"
             android:textColor="#ffffffff"
             android:textSize="18.0sp" />
-
-        <Button
-            android:id="@+id/btnClose"
-            android:layout_width="20.0dip"
-            android:layout_height="20.0dip"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="40.0dip"
-            android:background="@drawable/login_close" />
 
     </RelativeLayout>
 </RelativeLayout>

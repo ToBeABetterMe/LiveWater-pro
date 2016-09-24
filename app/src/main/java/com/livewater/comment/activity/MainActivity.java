@@ -148,7 +148,7 @@ public class MainActivity extends  BaseFragmentActivity
             startActivity(new Intent(MainActivity.this, RegisterActivity.class));
 
         } else if (id == R.id.nav_send) {
-
+            startActivity(new Intent(MainActivity.this,  LoginActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -177,7 +177,7 @@ public class MainActivity extends  BaseFragmentActivity
 
     private void initData() {
         currIndex = 0;
-        fragmentTags = new ArrayList<>(Arrays.asList("HomeFragment", "ImFragment","CommentFragment", "InterestFragment", "MemberFragment"));
+        fragmentTags = new ArrayList<>(Arrays.asList("BufferKnifeFragment", "CommentFragment","MainPagerFragment"));
     }
 
     private void initView() {
